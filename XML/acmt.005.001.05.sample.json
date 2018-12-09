@@ -1,0 +1,408 @@
+{
+	"urn:Document": {
+		"xmlns:urn": "urn:iso:std:iso:20022:tech:xsd:caam.001.001.03",
+		"urn:ATMDvcRpt": {
+			"urn:Hdr": {
+				"urn:MsgFctn": {
+					"urn:Fctn": "DPSP",
+					"urn:ATMSvcCd": "string",
+					"urn:HstSvcCd": "string"
+				},
+				"urn:PrtcolVrsn": "string",
+				"urn:XchgId": "string",
+				"urn:CreDtTm": "2007-10-26T08:36:28",
+				"urn:InitgPty": "string",
+				"urn:RcptPty": "string",
+				"urn:PrcStat": "string",
+				"urn:Tracblt": {
+					"urn:RlayId": {
+						"urn:Id": "string",
+						"urn:Tp": "OATM",
+						"urn:Issr": "OATM",
+						"urn:Ctry": "string",
+						"urn:ShrtNm": "string"
+					},
+					"urn:SeqNb": "string",
+					"urn:TracDtTmIn": "2006-08-19T19:27:14+02:00",
+					"urn:TracDtTmOut": "2009-05-16T14:42:28"
+				}
+			},
+			"urn:PrtctdATMDvcRpt": {
+				"urn:CnttTp": "EVLP",
+				"urn:EnvlpdData": {
+					"urn:Vrsn": "1000",
+					"urn:Rcpt": {
+						"urn:KeyTrnsprt": {
+							"urn:Vrsn": "1000",
+							"urn:RcptId": {
+								"urn:IssrAndSrlNb": {
+									"urn:Issr": {
+										"urn:RltvDstngshdNm": {
+											"urn:AttrTp": "OUAT",
+											"urn:AttrVal": "string"
+										}
+									},
+									"urn:SrlNb": "ZnJlbXVudA=="
+								},
+								"urn:KeyIdr": {
+									"urn:KeyId": "string",
+									"urn:KeyVrsn": "string",
+									"urn:SeqNb": "1000",
+									"urn:DerivtnId": "Zm9lZGVyZQ=="
+								}
+							},
+							"urn:KeyNcrptnAlgo": {
+								"urn:Algo": "RSAO",
+								"urn:Param": {
+									"urn:NcrptnFrmt": "TR34",
+									"urn:DgstAlgo": "HS01",
+									"urn:MskGnrtrAlgo": {
+										"urn:Algo": "MGF1",
+										"urn:Param": {
+											"urn:DgstAlgo": "HS38"
+										}
+									}
+								}
+							},
+							"urn:NcrptdKey": "aW92aXM="
+						},
+						"urn:KEK": {
+							"urn:Vrsn": "1000",
+							"urn:KEKId": {
+								"urn:KeyId": "string",
+								"urn:KeyVrsn": "string",
+								"urn:SeqNb": "1000",
+								"urn:DerivtnId": "ZmxhbW1hdG8="
+							},
+							"urn:KeyNcrptnAlgo": {
+								"urn:Algo": "UKPT",
+								"urn:Param": {
+									"urn:NcrptnFrmt": "TR31",
+									"urn:InitlstnVctr": "YmVsbGE=",
+									"urn:BPddg": "NULL"
+								}
+							},
+							"urn:NcrptdKey": "ZmxhbW1hcw=="
+						},
+						"urn:KeyIdr": {
+							"urn:KeyId": "string",
+							"urn:KeyVrsn": "string",
+							"urn:SeqNb": "1000",
+							"urn:DerivtnId": "YWNhY2FjYWM="
+						}
+					},
+					"urn:NcrptdCntt": {
+						"urn:CnttTp": "EVLP",
+						"urn:CnttNcrptnAlgo": {
+							"urn:Algo": "EA5C",
+							"urn:Param": {
+								"urn:NcrptnFrmt": "TR34",
+								"urn:InitlstnVctr": "Y2FlbHVtcXVl",
+								"urn:BPddg": "NUL8"
+							}
+						},
+						"urn:NcrptdData": "Y2lyY3Vt"
+					}
+				}
+			},
+			"urn:ATMDvcRpt": {
+				"urn:Envt": {
+					"urn:Acqrr": {
+						"urn:AcqrgInstn": "string",
+						"urn:Brnch": "string"
+					},
+					"urn:ATMMgrId": "string",
+					"urn:HstgNtty": {
+						"urn:Ctgy": "BRCH",
+						"urn:Id": "string"
+					},
+					"urn:ATM": {
+						"urn:Id": "string",
+						"urn:AddtlId": "string",
+						"urn:SeqNb": "string",
+						"urn:BaseCcy": "string",
+						"urn:Lctn": {
+							"urn:AdrLine": "string",
+							"urn:StrtNm": "string",
+							"urn:BldgNb": "string",
+							"urn:PstCd": "string",
+							"urn:TwnNm": "string",
+							"urn:CtrySubDvsn": "string",
+							"urn:Ctry": "string",
+							"urn:GLctn": {
+								"urn:GeogcCordints": {
+									"urn:Lat": "string",
+									"urn:Long": "string"
+								},
+								"urn:UTMCordints": {
+									"urn:UTMZone": "string",
+									"urn:UTMEstwrd": "1000",
+									"urn:UTMNrthwrd": "1000"
+								}
+							}
+						},
+						"urn:LctnCtgy": "PRIV",
+						"urn:Eqpmnt": {
+							"urn:Manfctr": "string",
+							"urn:Mdl": "string",
+							"urn:SrlNb": "string",
+							"urn:ApplPrvdr": "string",
+							"urn:ApplNm": "string",
+							"urn:ApplVrsn": "string",
+							"urn:ApprvlNb": "string",
+							"urn:CfgtnParam": {
+								"urn:Tp": "AMNT",
+								"urn:Vrsn": "string"
+							}
+						},
+						"urn:OutOfSvcDvc": "PSBK",
+						"urn:MsgPrtcn": "UNPR"
+					}
+				},
+				"urn:ATMGblSts": {
+					"urn:CurSts": "OUTS",
+					"urn:DmnddSts": "INSV"
+				},
+				"urn:CmdRslt": {
+					"urn:Tp": "SNDM",
+					"urn:ReqrdDtTm": "2017-04-19T16:38:57+02:00",
+					"urn:PrcdDtTm": "2008-08-06T16:17:00+02:00",
+					"urn:CmdId": {
+						"urn:Orgn": "string",
+						"urn:Ref": "string",
+						"urn:Prcr": "string"
+					},
+					"urn:Rslt": "SUCC",
+					"urn:AddtlErrInf": "string"
+				},
+				"urn:CmdCntxt": {
+					"urn:Tp": "CFGT",
+					"urn:CmdId": {
+						"urn:Orgn": "string",
+						"urn:Ref": "string",
+						"urn:Prcr": "string"
+					}
+				},
+				"urn:ATMSctyCntxt": {
+					"urn:CurSctySchme": "DTCH",
+					"urn:SctySchmeCpblties": "TR34",
+					"urn:SctyDvc": {
+						"urn:DvcPrprty": {
+							"urn:Manfctr": "string",
+							"urn:Mdl": "string",
+							"urn:Vrsn": "string",
+							"urn:SrlNb": "string",
+							"urn:FrmwrPrvdr": "string",
+							"urn:FrmwrId": "string",
+							"urn:FrmwrVrsn": "string"
+						},
+						"urn:CurCfgtn": {
+							"urn:Keys": {
+								"urn:MaxSmmtrcKey": "1000",
+								"urn:MaxAsmmtrcKey": "1000",
+								"urn:MaxRSAKeyLngth": "1000",
+								"urn:MaxRootKeyLngth": "1000"
+							},
+							"urn:Ncrptn": {
+								"urn:AsmmtrcNcrptn": "true",
+								"urn:AsmmtrcKeyStdId": "false",
+								"urn:AsmmtrcNcrptnAlgo": "RSAO",
+								"urn:SmmtrcTrnsprtKey": "false",
+								"urn:SmmtrcTrnsprtKeyAlgo": "EA5C",
+								"urn:SmmtrcNcrptnAlgo": "EA2C",
+								"urn:NcrptnFrmt": "TR31"
+							},
+							"urn:MACAlgo": "MACC",
+							"urn:DgstAlgo": "HS25",
+							"urn:DgtlSgntr": {
+								"urn:MaxCerts": "1000",
+								"urn:MaxSgntrs": "1000",
+								"urn:DgtlSgntrAlgo": "ERS1"
+							},
+							"urn:PIN": {
+								"urn:PINFrmt": "DBLD",
+								"urn:PINLngthCpblties": "1000"
+							},
+							"urn:MsgPrtcn": "EVLP"
+						},
+						"urn:SpprtdCfgtn": {
+							"urn:Keys": {
+								"urn:MaxSmmtrcKey": "1000",
+								"urn:MaxAsmmtrcKey": "1000",
+								"urn:MaxRSAKeyLngth": "1000",
+								"urn:MaxRootKeyLngth": "1000"
+							},
+							"urn:Ncrptn": {
+								"urn:AsmmtrcNcrptn": "false",
+								"urn:AsmmtrcKeyStdId": "true",
+								"urn:AsmmtrcNcrptnAlgo": "ERSA",
+								"urn:SmmtrcTrnsprtKey": "true",
+								"urn:SmmtrcTrnsprtKeyAlgo": "EA2C",
+								"urn:SmmtrcNcrptnAlgo": "EA9C",
+								"urn:NcrptnFrmt": "TR31"
+							},
+							"urn:MACAlgo": "MCCS",
+							"urn:DgstAlgo": "HS25",
+							"urn:DgtlSgntr": {
+								"urn:MaxCerts": "1000",
+								"urn:MaxSgntrs": "1000",
+								"urn:DgtlSgntrAlgo": "ERS2"
+							},
+							"urn:PIN": {
+								"urn:PINFrmt": "DBLC",
+								"urn:PINLngthCpblties": "1000"
+							},
+							"urn:MsgPrtcn": "MACB"
+						},
+						"urn:CurSts": "OUTS",
+						"urn:Incdnt": "SECR",
+						"urn:BndgStat": "BUND"
+					},
+					"urn:Key": {
+						"urn:Nm": "string",
+						"urn:Id": "string",
+						"urn:SctyDomnId": "string",
+						"urn:AddtlId": "c29yb3I=",
+						"urn:Vrsn": "string",
+						"urn:SeqCntr": "1000",
+						"urn:Tp": "AES2",
+						"urn:Fctn": "PINV",
+						"urn:ActvtnDt": "2005-06-10T02:51:48",
+						"urn:DeactvtnDt": "2015-07-31T16:52:59+02:00",
+						"urn:KeyChckVal": "bmltYm9ydW0=",
+						"urn:CurSts": "OPER",
+						"urn:FailrRsn": "CMPR"
+					},
+					"urn:HstChllng": "cHJlbWVyZQ=="
+				}
+			},
+			"urn:SctyTrlr": {
+				"urn:CnttTp": "DATA",
+				"urn:AuthntcdData": {
+					"urn:Vrsn": "1000",
+					"urn:Rcpt": {
+						"urn:KeyTrnsprt": {
+							"urn:Vrsn": "1000",
+							"urn:RcptId": {
+								"urn:IssrAndSrlNb": {
+									"urn:Issr": {
+										"urn:RltvDstngshdNm": {
+											"urn:AttrTp": "OUAT",
+											"urn:AttrVal": "string"
+										}
+									},
+									"urn:SrlNb": "bW9sZW1xdWU="
+								},
+								"urn:KeyIdr": {
+									"urn:KeyId": "string",
+									"urn:KeyVrsn": "string",
+									"urn:SeqNb": "1000",
+									"urn:DerivtnId": "ZmVyYW50"
+								}
+							},
+							"urn:KeyNcrptnAlgo": {
+								"urn:Algo": "RSAO",
+								"urn:Param": {
+									"urn:NcrptnFrmt": "TR31",
+									"urn:DgstAlgo": "HS38",
+									"urn:MskGnrtrAlgo": {
+										"urn:Algo": "MGF1",
+										"urn:Param": {
+											"urn:DgstAlgo": "HS38"
+										}
+									}
+								}
+							},
+							"urn:NcrptdKey": "ZmxhbW1hdG8="
+						},
+						"urn:KEK": {
+							"urn:Vrsn": "1000",
+							"urn:KEKId": {
+								"urn:KeyId": "string",
+								"urn:KeyVrsn": "string",
+								"urn:SeqNb": "1000",
+								"urn:DerivtnId": "YXJpc2FyaXM="
+							},
+							"urn:KeyNcrptnAlgo": {
+								"urn:Algo": "UKA1",
+								"urn:Param": {
+									"urn:NcrptnFrmt": "TR31",
+									"urn:InitlstnVctr": "dGVuZW5z",
+									"urn:BPddg": "NULL"
+								}
+							},
+							"urn:NcrptdKey": "cHJlbWl0"
+						},
+						"urn:KeyIdr": {
+							"urn:KeyId": "string",
+							"urn:KeyVrsn": "string",
+							"urn:SeqNb": "1000",
+							"urn:DerivtnId": "YWNhY2FjYWM="
+						}
+					},
+					"urn:MACAlgo": {
+						"urn:Algo": "MCCS",
+						"urn:Param": {
+							"urn:InitlstnVctr": "YWN1dG8=",
+							"urn:BPddg": "NUL8"
+						}
+					},
+					"urn:NcpsltdCntt": {
+						"urn:CnttTp": "DGST",
+						"urn:Cntt": "YXVzdHJpcw=="
+					},
+					"urn:MAC": "ZGVkaXQ="
+				},
+				"urn:SgndData": {
+					"urn:Vrsn": "1000",
+					"urn:DgstAlgo": {
+						"urn:Algo": "HS51"
+					},
+					"urn:NcpsltdCntt": {
+						"urn:CnttTp": "DATA",
+						"urn:Cntt": "YXRyaXM="
+					},
+					"urn:Cert": "aW1wb3N1aXQ=",
+					"urn:Sgnr": {
+						"urn:Vrsn": "1000",
+						"urn:SgnrId": {
+							"urn:IssrAndSrlNb": {
+								"urn:Issr": {
+									"urn:RltvDstngshdNm": {
+										"urn:AttrTp": "OUAT",
+										"urn:AttrVal": "string"
+									}
+								},
+								"urn:SrlNb": "bWFnbm8="
+							},
+							"urn:KeyIdr": {
+								"urn:KeyId": "string",
+								"urn:KeyVrsn": "string",
+								"urn:SeqNb": "1000",
+								"urn:DerivtnId": "YW5pbW9z"
+							}
+						},
+						"urn:DgstAlgo": {
+							"urn:Algo": "HS51"
+						},
+						"urn:SgntrAlgo": {
+							"urn:Algo": "ERS2",
+							"urn:Param": {
+								"urn:DgstAlgo": "HS38",
+								"urn:MskGnrtrAlgo": {
+									"urn:Algo": "MGF1",
+									"urn:Param": {
+										"urn:DgstAlgo": "HS25"
+									}
+								},
+								"urn:SaltLngth": "1000",
+								"urn:TrlrFld": "1000"
+							}
+						},
+						"urn:Sgntr": "bW9udGlz"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1642 @@
+{
+  "definitions": {
+    "ISODateTime": {
+      "type":"string",
+      "format":"date-time"
+    },
+    "Number": {
+      "type":"number"
+    },
+    "TrueFalseIndicator": {
+      "type":"boolean"
+    },
+    "ATMCommand6Code": {
+      "enum": [
+	"ABAL",
+	"ASTS",
+	"CFGT",
+	"CCNT",
+	"DISC",
+	"KACT",
+	"KDAC",
+	"KDWL",
+	"KRMV",
+	"SCFU",
+	"SSCU",
+	"SSTU",
+	"SNDM",
+	"HKCG",
+	"HKRV",
+	"KCHG"
+      ],
+      "type":"string"
+    },
+    "ATMDevice2Code": {
+      "enum": [
+	"ALRM",
+	"BRCD",
+	"CAMR",
+	"CRDD",
+	"CRDR",
+	"CSHD",
+	"CSHI",
+	"CSHR",
+	"CHCK",
+	"CDIS",
+	"DPST",
+	"DPRN",
+	"DOOR",
+	"INPM",
+	"JRNL",
+	"JPRN",
+	"SNSR",
+	"PSBK",
+	"PINR",
+	"RPRN",
+	"SCAN",
+	"RWDR"
+      ],
+      "type":"string"
+    },
+    "ATMSecurityScheme3Code": {
+      "enum": [
+	"APPK",
+	"CERT",
+	"FRAN",
+	"DTCH",
+	"LUXG",
+	"MANU",
+	"PKIP",
+	"SIGN",
+	"NONE",
+	"TR34"
+      ],
+      "type":"string"
+    },
+    "ATMSecurityScheme4Code": {
+      "enum": [
+	"APPK",
+	"CERT",
+	"FRAN",
+	"DTCH",
+	"LUXG",
+	"MANU",
+	"PKIP",
+	"SIGN",
+	"TR34"
+      ],
+      "type":"string"
+    },
+    "ATMStatus1Code": {
+      "enum": [
+	"INSV",
+	"OUTS"
+      ],
+      "type":"string"
+    },
+    "ATMStatus2Code": {
+      "enum": [
+	"OPER",
+	"OUTS"
+      ],
+      "type":"string"
+    },
+    "ATMStatus3Code": {
+      "enum": [
+	"OPER",
+	"STOP",
+	"WACT"
+      ],
+      "type":"string"
+    },
+    "Algorithm11Code": {
+      "enum": [
+	"HS25",
+	"HS38",
+	"HS51",
+	"HS01"
+      ],
+      "type":"string"
+    },
+    "Algorithm12Code": {
+      "enum": [
+	"MACC",
+	"MCCS",
+	"CMA1",
+	"MCC1",
+	"CMA9",
+	"CMA5"
+      ],
+      "type":"string"
+    },
+    "Algorithm13Code": {
+      "enum": [
+	"EA2C",
+	"E3DC",
+	"DKP9",
+	"UKPT",
+	"UKA1",
+	"EA9C",
+	"EA5C"
+      ],
+      "type":"string"
+    },
+    "Algorithm14Code": {
+      "enum": [
+	"ERS2",
+	"ERS1",
+	"RPSS"
+      ],
+      "type":"string"
+    },
+    "Algorithm15Code": {
+      "enum": [
+	"EA2C",
+	"E3DC",
+	"EA9C",
+	"EA5C"
+      ],
+      "type":"string"
+    },
+    "Algorithm7Code": {
+      "enum": [
+	"ERSA",
+	"RSAO"
+      ],
+      "type":"string"
+    },
+    "Algorithm8Code": {
+      "enum": [
+	"MGF1"
+      ],
+      "type":"string"
+    },
+    "AttributeType1Code": {
+      "enum": [
+	"CNAT",
+	"LATT",
+	"OATT",
+	"OUAT",
+	"CATT"
+      ],
+      "type":"string"
+    },
+    "BytePadding1Code": {
+      "enum": [
+	"LNGT",
+	"NUL8",
+	"NULG",
+	"NULL",
+	"RAND"
+      ],
+      "type":"string"
+    },
+    "ContentType2Code": {
+      "enum": [
+	"DATA",
+	"SIGN",
+	"EVLP",
+	"DGST",
+	"AUTH"
+      ],
+      "type":"string"
+    },
+    "CryptographicKeyType3Code": {
+      "enum": [
+	"AES2",
+	"EDE3",
+	"DKP9",
+	"AES9",
+	"AES5",
+	"EDE4"
+      ],
+      "type":"string"
+    },
+    "DataSetCategory7Code": {
+      "enum": [
+	"ATMC",
+	"ATMP",
+	"APPR",
+	"CRAP",
+	"CPRC",
+	"OEXR",
+	"AMNT",
+	"LOCC",
+	"MNOC"
+      ],
+      "type":"string"
+    },
+    "EncryptionFormat1Code": {
+      "enum": [
+	"TR31",
+	"TR34"
+      ],
+      "type":"string"
+    },
+    "FailureReason5Code": {
+      "enum": [
+	"SECR",
+	"HRDW"
+      ],
+      "type":"string"
+    },
+    "FailureReason6Code": {
+      "enum": [
+	"CMPR",
+	"EXPR",
+	"KCVE",
+	"KLOD"
+      ],
+      "type":"string"
+    },
+    "KeyUsage1Code": {
+      "enum": [
+	"ENCR",
+	"DCPT",
+	"DENC",
+	"DDEC",
+	"TRNI",
+	"TRNX",
+	"MACG",
+	"MACV",
+	"SIGG",
+	"SUGV",
+	"PINE",
+	"PIND",
+	"PINV",
+	"KEYG",
+	"KEYI",
+	"KEYX",
+	"KEYD"
+      ],
+      "type":"string"
+    },
+    "MessageFunction11Code": {
+      "enum": [
+	"BALN",
+	"CMPA",
+	"CMPD",
+	"ACMD",
+	"DVCC",
+	"DIAQ",
+	"DIAP",
+	"GSTS",
+	"INQQ",
+	"INQP",
+	"KYAQ",
+	"KYAP",
+	"PINQ",
+	"PINP",
+	"RJAQ",
+	"RJAP",
+	"WITV",
+	"WITK",
+	"WITQ",
+	"WITP",
+	"INQC",
+	"H2AP",
+	"H2AQ",
+	"TMOP",
+	"CSEC",
+	"DSEC",
+	"SKSC",
+	"SSTS",
+	"DPSK",
+	"DPSV",
+	"DPSQ",
+	"DPSP",
+	"EXPK",
+	"EXPV",
+	"TRFQ",
+	"TRFP",
+	"RPTC"
+      ],
+      "type":"string"
+    },
+    "MessageProtection1Code": {
+      "enum": [
+	"EVLP",
+	"MACB",
+	"MACM",
+	"UNPR"
+      ],
+      "type":"string"
+    },
+    "PINFormat4Code": {
+      "enum": [
+	"ANSI",
+	"BNCM",
+	"BKSY",
+	"DBLD",
+	"DBLC",
+	"ECI2",
+	"ECI3",
+	"EMVS",
+	"IBM3",
+	"ISO0",
+	"ISO1",
+	"ISO2",
+	"ISO3",
+	"ISO4",
+	"ISO5",
+	"VIS2",
+	"VIS3"
+      ],
+      "type":"string"
+    },
+    "PartyType12Code": {
+      "enum": [
+	"ACQR",
+	"ATMG",
+	"CISP",
+	"DLIS",
+	"HSTG",
+	"ITAG",
+	"OATM"
+      ],
+      "type":"string"
+    },
+    "TR34Status1Code": {
+      "enum": [
+	"BUND",
+	"UBND"
+      ],
+      "type":"string"
+    },
+    "TerminalManagementActionResult2Code": {
+      "enum": [
+	"CNTE",
+	"FMTE",
+	"HRDW",
+	"NSUP",
+	"SECR",
+	"SUCC",
+	"SYNE",
+	"TIMO",
+	"UKRF"
+      ],
+      "type":"string"
+    },
+    "TransactionEnvironment2Code": {
+      "enum": [
+	"PRIV",
+	"PUBL"
+      ],
+      "type":"string"
+    },
+    "TransactionEnvironment3Code": {
+      "enum": [
+	"BRCH",
+	"MERC",
+	"OTHR"
+      ],
+      "type":"string"
+    },
+    "ActiveCurrencyCode": {
+      "type":"string",
+      "pattern":"[A-Z]{3,3}"
+    },
+    "CountryCode": {
+      "type":"string",
+      "pattern":"[A-Z]{2,2}"
+    },
+    "Max100KBinary": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":102400
+    },
+    "Max140Binary": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":140
+    },
+    "Max140Text": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":140
+    },
+    "Max16Text": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":16
+    },
+    "Max256Text": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":256
+    },
+    "Max3000Binary": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":3000
+    },
+    "Max35Binary": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":35
+    },
+    "Max35Text": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":35
+    },
+    "Max3NumericText": {
+      "type":"string",
+      "pattern":"[0-9]{1,3}"
+    },
+    "Max5000Binary": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":5000
+    },
+    "Max500Binary": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":500
+    },
+    "Max6Text": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":6
+    },
+    "Max70Text": {
+      "type":"string",
+      "minLength":1,
+      "maxLength":70
+    },
+    "Min2Max3AlphaText": {
+      "type":"string",
+      "pattern":"[a-zA-Z]{2,3}"
+    },
+    "Min5Max16Binary": {
+      "type":"string",
+      "minLength":5,
+      "maxLength":16
+    },
+    "ATMCommand11": {
+      "required": [
+	"Tp",
+	"PrcdDtTm",
+	"Rslt"
+      ],
+      "type":"object",
+      "properties": {
+	"Tp": {
+	  "$ref":"#/definitions/ATMCommand6Code"
+	},
+	"ReqrdDtTm": {
+	  "$ref":"#/definitions/ISODateTime"
+	},
+	"PrcdDtTm": {
+	  "$ref":"#/definitions/ISODateTime"
+	},
+	"CmdId": {
+	  "$ref":"#/definitions/ATMCommandIdentification1"
+	},
+	"Rslt": {
+	  "$ref":"#/definitions/TerminalManagementActionResult2Code"
+	},
+	"AddtlErrInf": {
+	  "$ref":"#/definitions/Max140Text"
+	}
+      }
+    },
+    "ATMCommand12": {
+      "required": [
+	"Tp"
+      ],
+      "type":"object",
+      "properties": {
+	"Tp": {
+	  "$ref":"#/definitions/ATMCommand6Code"
+	},
+	"CmdId": {
+	  "$ref":"#/definitions/ATMCommandIdentification1"
+	}
+      }
+    },
+    "ATMCommandIdentification1": {
+      "type":"object",
+      "properties": {
+	"Orgn": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"Ref": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"Prcr": {
+	  "$ref":"#/definitions/Max140Text"
+	}
+      }
+    },
+    "ATMConfigurationParameter1": {
+      "required": [
+	"Tp",
+	"Vrsn"
+      ],
+      "type":"object",
+      "properties": {
+	"Tp": {
+	  "$ref":"#/definitions/DataSetCategory7Code"
+	},
+	"Vrsn": {
+	  "$ref":"#/definitions/Max35Text"
+	}
+      }
+    },
+    "ATMDeviceReport3": {
+      "required": [
+	"Envt",
+	"ATMGblSts"
+      ],
+      "type":"object",
+      "properties": {
+	"Envt": {
+	  "$ref":"#/definitions/ATMEnvironment6"
+	},
+	"ATMGblSts": {
+	  "$ref":"#/definitions/ATMStatus1"
+	},
+	"CmdRslt": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/ATMCommand11"
+	  },
+	  "minItems":0
+	},
+	"CmdCntxt": {
+	  "$ref":"#/definitions/ATMCommand12"
+	},
+	"ATMSctyCntxt": {
+	  "$ref":"#/definitions/ATMSecurityContext5"
+	}
+      }
+    },
+    "ATMDeviceReportV03": {
+      "required": [
+	"Hdr"
+      ],
+      "type":"object",
+      "properties": {
+	"Hdr": {
+	  "$ref":"#/definitions/Header31"
+	},
+	"PrtctdATMDvcRpt": {
+	  "$ref":"#/definitions/ContentInformationType10"
+	},
+	"ATMDvcRpt": {
+	  "$ref":"#/definitions/ATMDeviceReport3"
+	},
+	"SctyTrlr": {
+	  "$ref":"#/definitions/ContentInformationType13"
+	}
+      }
+    },
+    "ATMEnvironment6": {
+      "type":"object",
+      "properties": {
+	"Acqrr": {
+	  "$ref":"#/definitions/Acquirer7"
+	},
+	"ATMMgrId": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"HstgNtty": {
+	  "$ref":"#/definitions/TerminalHosting1"
+	},
+	"ATM": {
+	  "$ref":"#/definitions/AutomatedTellerMachine5"
+	}
+      },
+      "required": [
+	"ATM"
+      ]
+    },
+    "ATMEquipment1": {
+      "type":"object",
+      "properties": {
+	"Manfctr": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"Mdl": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"SrlNb": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"ApplPrvdr": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"ApplNm": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"ApplVrsn": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"ApprvlNb": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"CfgtnParam": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/ATMConfigurationParameter1"
+	  },
+	  "minItems":0
+	}
+      }
+    },
+    "ATMEquipment2": {
+      "type":"object",
+      "properties": {
+	"Manfctr": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"Mdl": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"Vrsn": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"SrlNb": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"FrmwrPrvdr": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"FrmwrId": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"FrmwrVrsn": {
+	  "$ref":"#/definitions/Max35Text"
+	}
+      }
+    },
+    "ATMMessageFunction2": {
+      "required": [
+	"Fctn"
+      ],
+      "type":"object",
+      "properties": {
+	"Fctn": {
+	  "$ref":"#/definitions/MessageFunction11Code"
+	},
+	"ATMSvcCd": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"HstSvcCd": {
+	  "$ref":"#/definitions/Max35Text"
+	}
+      }
+    },
+    "ATMSecurityConfiguration1": {
+      "type":"object",
+      "properties": {
+	"Keys": {
+	  "$ref":"#/definitions/ATMSecurityConfiguration2"
+	},
+	"Ncrptn": {
+	  "$ref":"#/definitions/ATMSecurityConfiguration3"
+	},
+	"MACAlgo": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Algorithm12Code"
+	  },
+	  "minItems":0
+	},
+	"DgstAlgo": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Algorithm11Code"
+	  },
+	  "minItems":0
+	},
+	"DgtlSgntr": {
+	  "$ref":"#/definitions/ATMSecurityConfiguration4"
+	},
+	"PIN": {
+	  "$ref":"#/definitions/ATMSecurityConfiguration5"
+	},
+	"MsgPrtcn": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/MessageProtection1Code"
+	  },
+	  "minItems":0
+	}
+      }
+    },
+    "ATMSecurityConfiguration2": {
+      "type":"object",
+      "properties": {
+	"MaxSmmtrcKey": {
+	  "$ref":"#/definitions/Number"
+	},
+	"MaxAsmmtrcKey": {
+	  "$ref":"#/definitions/Number"
+	},
+	"MaxRSAKeyLngth": {
+	  "$ref":"#/definitions/Number"
+	},
+	"MaxRootKeyLngth": {
+	  "$ref":"#/definitions/Number"
+	}
+      }
+    },
+    "ATMSecurityConfiguration3": {
+      "type":"object",
+      "properties": {
+	"AsmmtrcNcrptn": {
+	  "$ref":"#/definitions/TrueFalseIndicator"
+	},
+	"AsmmtrcKeyStdId": {
+	  "$ref":"#/definitions/TrueFalseIndicator"
+	},
+	"AsmmtrcNcrptnAlgo": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Algorithm7Code"
+	  },
+	  "minItems":0
+	},
+	"SmmtrcTrnsprtKey": {
+	  "$ref":"#/definitions/TrueFalseIndicator"
+	},
+	"SmmtrcTrnsprtKeyAlgo": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Algorithm13Code"
+	  },
+	  "minItems":0
+	},
+	"SmmtrcNcrptnAlgo": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Algorithm15Code"
+	  },
+	  "minItems":0
+	},
+	"NcrptnFrmt": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/EncryptionFormat1Code"
+	  },
+	  "minItems":0
+	}
+      }
+    },
+    "ATMSecurityConfiguration4": {
+      "type":"object",
+      "properties": {
+	"MaxCerts": {
+	  "$ref":"#/definitions/Number"
+	},
+	"MaxSgntrs": {
+	  "$ref":"#/definitions/Number"
+	},
+	"DgtlSgntrAlgo": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Algorithm14Code"
+	  },
+	  "minItems":0
+	}
+      }
+    },
+    "ATMSecurityConfiguration5": {
+      "type":"object",
+      "properties": {
+	"PINFrmt": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/PINFormat4Code"
+	  },
+	  "minItems":0
+	},
+	"PINLngthCpblties": {
+	  "$ref":"#/definitions/Number"
+	}
+      }
+    },
+    "ATMSecurityContext5": {
+      "required": [
+	"CurSctySchme",
+	"SctyDvc"
+      ],
+      "type":"object",
+      "properties": {
+	"CurSctySchme": {
+	  "$ref":"#/definitions/ATMSecurityScheme3Code"
+	},
+	"SctySchmeCpblties": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/ATMSecurityScheme4Code"
+	  },
+	  "minItems":0
+	},
+	"SctyDvc": {
+	  "$ref":"#/definitions/ATMSecurityDevice2"
+	},
+	"Key": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/CryptographicKey11"
+	  },
+	  "minItems":0
+	},
+	"HstChllng": {
+	  "$ref":"#/definitions/Max140Binary"
+	}
+      }
+    },
+    "ATMSecurityDevice2": {
+      "type":"object",
+      "properties": {
+	"DvcPrprty": {
+	  "$ref":"#/definitions/ATMEquipment2"
+	},
+	"CurCfgtn": {
+	  "$ref":"#/definitions/ATMSecurityConfiguration1"
+	},
+	"SpprtdCfgtn": {
+	  "$ref":"#/definitions/ATMSecurityConfiguration1"
+	},
+	"CurSts": {
+	  "$ref":"#/definitions/ATMStatus2Code"
+	},
+	"Incdnt": {
+	  "$ref":"#/definitions/FailureReason5Code"
+	},
+	"BndgStat": {
+	  "$ref":"#/definitions/TR34Status1Code"
+	}
+      },
+      "required": [
+	"CurCfgtn",
+	"CurSts"
+      ]
+    },
+    "ATMStatus1": {
+      "required": [
+	"CurSts"
+      ],
+      "type":"object",
+      "properties": {
+	"CurSts": {
+	  "$ref":"#/definitions/ATMStatus1Code"
+	},
+	"DmnddSts": {
+	  "$ref":"#/definitions/ATMStatus1Code"
+	}
+      }
+    },
+    "Acquirer7": {
+      "type":"object",
+      "properties": {
+	"AcqrgInstn": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"Brnch": {
+	  "$ref":"#/definitions/Max35Text"
+	}
+      }
+    },
+    "AlgorithmIdentification11": {
+      "required": [
+	"Algo"
+      ],
+      "type":"object",
+      "properties": {
+	"Algo": {
+	  "$ref":"#/definitions/Algorithm7Code"
+	},
+	"Param": {
+	  "$ref":"#/definitions/Parameter4"
+	}
+      }
+    },
+    "AlgorithmIdentification12": {
+      "required": [
+	"Algo"
+      ],
+      "type":"object",
+      "properties": {
+	"Algo": {
+	  "$ref":"#/definitions/Algorithm8Code"
+	},
+	"Param": {
+	  "$ref":"#/definitions/Parameter5"
+	}
+      }
+    },
+    "AlgorithmIdentification13": {
+      "required": [
+	"Algo"
+      ],
+      "type":"object",
+      "properties": {
+	"Algo": {
+	  "$ref":"#/definitions/Algorithm13Code"
+	},
+	"Param": {
+	  "$ref":"#/definitions/Parameter6"
+	}
+      }
+    },
+    "AlgorithmIdentification14": {
+      "required": [
+	"Algo"
+      ],
+      "type":"object",
+      "properties": {
+	"Algo": {
+	  "$ref":"#/definitions/Algorithm15Code"
+	},
+	"Param": {
+	  "$ref":"#/definitions/Parameter6"
+	}
+      }
+    },
+    "AlgorithmIdentification15": {
+      "required": [
+	"Algo"
+      ],
+      "type":"object",
+      "properties": {
+	"Algo": {
+	  "$ref":"#/definitions/Algorithm12Code"
+	},
+	"Param": {
+	  "$ref":"#/definitions/Parameter7"
+	}
+      }
+    },
+    "AlgorithmIdentification16": {
+      "required": [
+	"Algo"
+      ],
+      "type":"object",
+      "properties": {
+	"Algo": {
+	  "$ref":"#/definitions/Algorithm11Code"
+	}
+      }
+    },
+    "AlgorithmIdentification17": {
+      "required": [
+	"Algo"
+      ],
+      "type":"object",
+      "properties": {
+	"Algo": {
+	  "$ref":"#/definitions/Algorithm14Code"
+	},
+	"Param": {
+	  "$ref":"#/definitions/Parameter8"
+	}
+      }
+    },
+    "AuthenticatedData4": {
+      "type":"object",
+      "properties": {
+	"Vrsn": {
+	  "$ref":"#/definitions/Number"
+	},
+	"Rcpt": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Recipient4Choice"
+	  },
+	  "minItems":1
+	},
+	"MACAlgo": {
+	  "$ref":"#/definitions/AlgorithmIdentification15"
+	},
+	"NcpsltdCntt": {
+	  "$ref":"#/definitions/EncapsulatedContent3"
+	},
+	"MAC": {
+	  "$ref":"#/definitions/Max140Binary"
+	}
+      },
+      "required": [
+	"Rcpt",
+	"MACAlgo",
+	"NcpsltdCntt",
+	"MAC"
+      ]
+    },
+    "AutomatedTellerMachine5": {
+      "required": [
+	"Id",
+	"BaseCcy"
+      ],
+      "type":"object",
+      "properties": {
+	"Id": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"AddtlId": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"SeqNb": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"BaseCcy": {
+	  "$ref":"#/definitions/ActiveCurrencyCode"
+	},
+	"Lctn": {
+	  "$ref":"#/definitions/PostalAddress17"
+	},
+	"LctnCtgy": {
+	  "$ref":"#/definitions/TransactionEnvironment2Code"
+	},
+	"Eqpmnt": {
+	  "$ref":"#/definitions/ATMEquipment1"
+	},
+	"OutOfSvcDvc": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/ATMDevice2Code"
+	  },
+	  "minItems":0
+	},
+	"MsgPrtcn": {
+	  "$ref":"#/definitions/MessageProtection1Code"
+	}
+      }
+    },
+    "CertificateIssuer1": {
+      "required": [
+	"RltvDstngshdNm"
+      ],
+      "type":"object",
+      "properties": {
+	"RltvDstngshdNm": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/RelativeDistinguishedName1"
+	  },
+	  "minItems":1
+	}
+      }
+    },
+    "ContentInformationType10": {
+      "required": [
+	"CnttTp",
+	"EnvlpdData"
+      ],
+      "type":"object",
+      "properties": {
+	"CnttTp": {
+	  "$ref":"#/definitions/ContentType2Code"
+	},
+	"EnvlpdData": {
+	  "$ref":"#/definitions/EnvelopedData4"
+	}
+      }
+    },
+    "ContentInformationType13": {
+      "required": [
+	"CnttTp"
+      ],
+      "type":"object",
+      "properties": {
+	"CnttTp": {
+	  "$ref":"#/definitions/ContentType2Code"
+	},
+	"AuthntcdData": {
+	  "$ref":"#/definitions/AuthenticatedData4"
+	},
+	"SgndData": {
+	  "$ref":"#/definitions/SignedData4"
+	}
+      }
+    },
+    "CryptographicKey11": {
+      "type":"object",
+      "properties": {
+	"Nm": {
+	  "$ref":"#/definitions/Max140Text"
+	},
+	"Id": {
+	  "$ref":"#/definitions/Max140Text"
+	},
+	"SctyDomnId": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"AddtlId": {
+	  "$ref":"#/definitions/Max35Binary"
+	},
+	"Vrsn": {
+	  "$ref":"#/definitions/Max256Text"
+	},
+	"SeqCntr": {
+	  "$ref":"#/definitions/Number"
+	},
+	"Tp": {
+	  "$ref":"#/definitions/CryptographicKeyType3Code"
+	},
+	"Fctn": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/KeyUsage1Code"
+	  },
+	  "minItems":1
+	},
+	"ActvtnDt": {
+	  "$ref":"#/definitions/ISODateTime"
+	},
+	"DeactvtnDt": {
+	  "$ref":"#/definitions/ISODateTime"
+	},
+	"KeyChckVal": {
+	  "$ref":"#/definitions/Max35Binary"
+	},
+	"CurSts": {
+	  "$ref":"#/definitions/ATMStatus3Code"
+	},
+	"FailrRsn": {
+	  "$ref":"#/definitions/FailureReason6Code"
+	}
+      },
+      "required": [
+	"Tp",
+	"Fctn",
+	"CurSts"
+      ]
+    },
+    "Document": {
+      "required": [
+	"ATMDvcRpt"
+      ],
+      "type":"object",
+      "properties": {
+	"ATMDvcRpt": {
+	  "$ref":"#/definitions/ATMDeviceReportV03"
+	}
+      }
+    },
+    "EncapsulatedContent3": {
+      "required": [
+	"CnttTp"
+      ],
+      "type":"object",
+      "properties": {
+	"CnttTp": {
+	  "$ref":"#/definitions/ContentType2Code"
+	},
+	"Cntt": {
+	  "$ref":"#/definitions/Max100KBinary"
+	}
+      }
+    },
+    "EncryptedContent3": {
+      "required": [
+	"CnttTp",
+	"CnttNcrptnAlgo",
+	"NcrptdData"
+      ],
+      "type":"object",
+      "properties": {
+	"CnttTp": {
+	  "$ref":"#/definitions/ContentType2Code"
+	},
+	"CnttNcrptnAlgo": {
+	  "$ref":"#/definitions/AlgorithmIdentification14"
+	},
+	"NcrptdData": {
+	  "$ref":"#/definitions/Max100KBinary"
+	}
+      }
+    },
+    "EnvelopedData4": {
+      "type":"object",
+      "properties": {
+	"Vrsn": {
+	  "$ref":"#/definitions/Number"
+	},
+	"Rcpt": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Recipient4Choice"
+	  },
+	  "minItems":1
+	},
+	"NcrptdCntt": {
+	  "$ref":"#/definitions/EncryptedContent3"
+	}
+      },
+      "required": [
+	"Rcpt"
+      ]
+    },
+    "GenericIdentification77": {
+      "required": [
+	"Id",
+	"Tp"
+      ],
+      "type":"object",
+      "properties": {
+	"Id": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"Tp": {
+	  "$ref":"#/definitions/PartyType12Code"
+	},
+	"Issr": {
+	  "$ref":"#/definitions/PartyType12Code"
+	},
+	"Ctry": {
+	  "$ref":"#/definitions/Min2Max3AlphaText"
+	},
+	"ShrtNm": {
+	  "$ref":"#/definitions/Max35Text"
+	}
+      }
+    },
+    "GeographicCoordinates1": {
+      "required": [
+	"Lat",
+	"Long"
+      ],
+      "type":"object",
+      "properties": {
+	"Lat": {
+	  "$ref":"#/definitions/Max16Text"
+	},
+	"Long": {
+	  "$ref":"#/definitions/Max16Text"
+	}
+      }
+    },
+    "Header31": {
+      "required": [
+	"MsgFctn",
+	"PrtcolVrsn",
+	"XchgId",
+	"CreDtTm",
+	"InitgPty"
+      ],
+      "type":"object",
+      "properties": {
+	"MsgFctn": {
+	  "$ref":"#/definitions/ATMMessageFunction2"
+	},
+	"PrtcolVrsn": {
+	  "$ref":"#/definitions/Max6Text"
+	},
+	"XchgId": {
+	  "$ref":"#/definitions/Max3NumericText"
+	},
+	"CreDtTm": {
+	  "$ref":"#/definitions/ISODateTime"
+	},
+	"InitgPty": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"RcptPty": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"PrcStat": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"Tracblt": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Traceability4"
+	  },
+	  "minItems":0
+	}
+      }
+    },
+    "IssuerAndSerialNumber1": {
+      "required": [
+	"Issr",
+	"SrlNb"
+      ],
+      "type":"object",
+      "properties": {
+	"Issr": {
+	  "$ref":"#/definitions/CertificateIssuer1"
+	},
+	"SrlNb": {
+	  "$ref":"#/definitions/Max35Binary"
+	}
+      }
+    },
+    "KEK4": {
+      "type":"object",
+      "properties": {
+	"Vrsn": {
+	  "$ref":"#/definitions/Number"
+	},
+	"KEKId": {
+	  "$ref":"#/definitions/KEKIdentifier2"
+	},
+	"KeyNcrptnAlgo": {
+	  "$ref":"#/definitions/AlgorithmIdentification13"
+	},
+	"NcrptdKey": {
+	  "$ref":"#/definitions/Max500Binary"
+	}
+      },
+      "required": [
+	"KEKId",
+	"KeyNcrptnAlgo",
+	"NcrptdKey"
+      ]
+    },
+    "KEKIdentifier2": {
+      "required": [
+	"KeyId",
+	"KeyVrsn"
+      ],
+      "type":"object",
+      "properties": {
+	"KeyId": {
+	  "$ref":"#/definitions/Max140Text"
+	},
+	"KeyVrsn": {
+	  "$ref":"#/definitions/Max140Text"
+	},
+	"SeqNb": {
+	  "$ref":"#/definitions/Number"
+	},
+	"DerivtnId": {
+	  "$ref":"#/definitions/Min5Max16Binary"
+	}
+      }
+    },
+    "KeyTransport4": {
+      "type":"object",
+      "properties": {
+	"Vrsn": {
+	  "$ref":"#/definitions/Number"
+	},
+	"RcptId": {
+	  "$ref":"#/definitions/Recipient5Choice"
+	},
+	"KeyNcrptnAlgo": {
+	  "$ref":"#/definitions/AlgorithmIdentification11"
+	},
+	"NcrptdKey": {
+	  "$ref":"#/definitions/Max5000Binary"
+	}
+      },
+      "required": [
+	"RcptId",
+	"KeyNcrptnAlgo",
+	"NcrptdKey"
+      ]
+    },
+    "Parameter4": {
+      "type":"object",
+      "properties": {
+	"NcrptnFrmt": {
+	  "$ref":"#/definitions/EncryptionFormat1Code"
+	},
+	"DgstAlgo": {
+	  "$ref":"#/definitions/Algorithm11Code"
+	},
+	"MskGnrtrAlgo": {
+	  "$ref":"#/definitions/AlgorithmIdentification12"
+	}
+      }
+    },
+    "Parameter5": {
+      "type":"object",
+      "properties": {
+	"DgstAlgo": {
+	  "$ref":"#/definitions/Algorithm11Code"
+	}
+      }
+    },
+    "Parameter6": {
+      "type":"object",
+      "properties": {
+	"NcrptnFrmt": {
+	  "$ref":"#/definitions/EncryptionFormat1Code"
+	},
+	"InitlstnVctr": {
+	  "$ref":"#/definitions/Max500Binary"
+	},
+	"BPddg": {
+	  "$ref":"#/definitions/BytePadding1Code"
+	}
+      }
+    },
+    "Parameter7": {
+      "type":"object",
+      "properties": {
+	"InitlstnVctr": {
+	  "$ref":"#/definitions/Max500Binary"
+	},
+	"BPddg": {
+	  "$ref":"#/definitions/BytePadding1Code"
+	}
+      }
+    },
+    "Parameter8": {
+      "required": [
+	"DgstAlgo",
+	"MskGnrtrAlgo",
+	"SaltLngth"
+      ],
+      "type":"object",
+      "properties": {
+	"DgstAlgo": {
+	  "$ref":"#/definitions/Algorithm11Code"
+	},
+	"MskGnrtrAlgo": {
+	  "$ref":"#/definitions/AlgorithmIdentification12"
+	},
+	"SaltLngth": {
+	  "$ref":"#/definitions/Number"
+	},
+	"TrlrFld": {
+	  "$ref":"#/definitions/Number"
+	}
+      }
+    },
+    "PostalAddress17": {
+      "type":"object",
+      "properties": {
+	"AdrLine": {
+	  "maxItems":2,
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Max70Text"
+	  },
+	  "minItems":0
+	},
+	"StrtNm": {
+	  "$ref":"#/definitions/Max70Text"
+	},
+	"BldgNb": {
+	  "$ref":"#/definitions/Max16Text"
+	},
+	"PstCd": {
+	  "$ref":"#/definitions/Max16Text"
+	},
+	"TwnNm": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"CtrySubDvsn": {
+	  "maxItems":2,
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Max35Text"
+	  },
+	  "minItems":0
+	},
+	"Ctry": {
+	  "$ref":"#/definitions/CountryCode"
+	},
+	"GLctn": {
+	  "$ref":"#/definitions/GeographicLocation1Choice"
+	}
+      },
+      "required": [
+	"TwnNm",
+	"Ctry"
+      ]
+    },
+    "RelativeDistinguishedName1": {
+      "required": [
+	"AttrTp",
+	"AttrVal"
+      ],
+      "type":"object",
+      "properties": {
+	"AttrTp": {
+	  "$ref":"#/definitions/AttributeType1Code"
+	},
+	"AttrVal": {
+	  "$ref":"#/definitions/Max140Text"
+	}
+      }
+    },
+    "SignedData4": {
+      "type":"object",
+      "properties": {
+	"Vrsn": {
+	  "$ref":"#/definitions/Number"
+	},
+	"DgstAlgo": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/AlgorithmIdentification16"
+	  },
+	  "minItems":1
+	},
+	"NcpsltdCntt": {
+	  "$ref":"#/definitions/EncapsulatedContent3"
+	},
+	"Cert": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Max5000Binary"
+	  },
+	  "minItems":0
+	},
+	"Sgnr": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/Signer3"
+	  },
+	  "minItems":1
+	}
+      },
+      "required": [
+	"DgstAlgo",
+	"NcpsltdCntt",
+	"Sgnr"
+      ]
+    },
+    "Signer3": {
+      "type":"object",
+      "properties": {
+	"Vrsn": {
+	  "$ref":"#/definitions/Number"
+	},
+	"SgnrId": {
+	  "$ref":"#/definitions/Recipient5Choice"
+	},
+	"DgstAlgo": {
+	  "$ref":"#/definitions/AlgorithmIdentification16"
+	},
+	"SgntrAlgo": {
+	  "$ref":"#/definitions/AlgorithmIdentification17"
+	},
+	"Sgntr": {
+	  "$ref":"#/definitions/Max3000Binary"
+	}
+      },
+      "required": [
+	"DgstAlgo",
+	"SgntrAlgo",
+	"Sgntr"
+      ]
+    },
+    "TerminalHosting1": {
+      "type":"object",
+      "properties": {
+	"Ctgy": {
+	  "$ref":"#/definitions/TransactionEnvironment3Code"
+	},
+	"Id": {
+	  "$ref":"#/definitions/Max35Text"
+	}
+      }
+    },
+    "Traceability4": {
+      "required": [
+	"RlayId",
+	"TracDtTmIn",
+	"TracDtTmOut"
+      ],
+      "type":"object",
+      "properties": {
+	"RlayId": {
+	  "$ref":"#/definitions/GenericIdentification77"
+	},
+	"SeqNb": {
+	  "$ref":"#/definitions/Max35Text"
+	},
+	"TracDtTmIn": {
+	  "$ref":"#/definitions/ISODateTime"
+	},
+	"TracDtTmOut": {
+	  "$ref":"#/definitions/ISODateTime"
+	}
+      }
+    },
+    "UTMCoordinates1": {
+      "required": [
+	"UTMZone",
+	"UTMEstwrd",
+	"UTMNrthwrd"
+      ],
+      "type":"object",
+      "properties": {
+	"UTMZone": {
+	  "$ref":"#/definitions/Max16Text"
+	},
+	"UTMEstwrd": {
+	  "$ref":"#/definitions/Number"
+	},
+	"UTMNrthwrd": {
+	  "$ref":"#/definitions/Number"
+	}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref":"#/definitions/Document"
+    }
+  ],
+  "$schema":"http://json-schema.org/draft-04/schema#"
+}
