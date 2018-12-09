@@ -1,8 +1,8 @@
-#ISO20022 JSON XML
+# ISO20022 JSON XML
 
 We are using one XML file published on the iso20022 website.
 
-##ISO20022 XML File downloaded from
+## ISO20022 XML File downloaded from
 
 ```
 URL  : https://www.iso20022.org/full_catalogue.page
@@ -10,17 +10,17 @@ File : acmt.005.001.05.xsd
 Type : ATMDeviceReportV03
 ```
 
-##Install Node JS on your machine
+## Install Node JS on your machine
 ```
 URL  : https://nodejs.org/en/download/
 ```
 
-##Install XSD to JSON schema converter on your machine
+## Install XSD to JSON schema converter on your machine
 ```
 URL  : https://www.npmjs.com/package/xsd2json
 ```
 
-##Convert XSD to JSON schema demo(Using command line) 
+## Convert XSD to JSON schema demo(Using command line) 
 ```
 £:~/Code/ISO20022-JSON/XSD|
 ⇒  xsd2json acmt.005.001.05.xsd > acmt.005.001.05.schema.json
@@ -31,12 +31,12 @@ total 144
 -rw-r--r--@ 1 suchakjani  staff  43248 9 Dec 07:56 acmt.005.001.05.xsd
 ```
 
-##Convert XSD to sample XML (Use the URL to generate a sample XML online)
+## Convert XSD to sample XML (Use the URL to generate a sample XML online)
 ```
 URL  : https://devutilsonline.com/xsd-xml/generate-xml-from-xsd
 ```
 
-###Place the file in the XML folder
+### Place the file in the XML folder
 ```
 £:~/Code/ISO20022-JSON/XML|
 ⇒  ls  -la
@@ -46,12 +46,12 @@ drwxr-xr-x  4 suchakjani  staff    128 9 Dec 08:55 ..
 -rw-r--r--@ 1 suchakjani  staff  21686 9 Dec 08:55 acmt.005.001.05.sample.xml
 ```
 
-##Install XML to JSON converter on your machine
+## Install XML to JSON converter on your machine
 ```
 URL  : https://www.npmjs.com/package/xml2json-cli
 ```
 
-##Convert XML to JSON (Using command line)
+## Convert XML to JSON (Using command line)
 ```
 £:~/Code/ISO20022-JSON/XML|
 ⇒  ls -l
